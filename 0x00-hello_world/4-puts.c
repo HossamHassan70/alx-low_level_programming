@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - entry point
-*return - always 0 (sucsess)
+*return: always 0 (sucsess)
 */
 int main(void)
 {
