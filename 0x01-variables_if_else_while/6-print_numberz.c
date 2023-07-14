@@ -3,19 +3,20 @@
 /**
 *main - Entry point
 *
-*Description: print numbers from 0 to 10
+*Description: print numbers from 0 to 9
 *
 *Return: 0 (sucsess)
 */
 
 int main(void)
 {
-	char ch = '0';
+	int digit = 0;
 
-	while (ch <= '9')
+	while (digit <= '9')
 	{
-		putchar(ch);
-		ch++;
+		/*convert to ACII representation*/
+		putchar(digit + '0');
+		digit++;
 	}
 	putchar('\n');
 
