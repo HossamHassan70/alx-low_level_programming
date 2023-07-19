@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-#ifndef main_h
-#define main_h
+#ifndef MAIN_H
+#define MAIN_H
+
 
 int _putchar(char);
 void print_alphabet(void);
@@ -15,12 +15,6 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
-=======
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
 
-int _putchar(char c);
->>>>>>> 874488dd0bbf77b31e1c3efb2ee191ab0ab29334
 
 #endif
