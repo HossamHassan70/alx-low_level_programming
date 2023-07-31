@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - Entry point prints the sum of the two diagonals of a square matrix of integers.
+ * print_diagsums - Entry point prints the sum of the two
+ *	diagonals of a square matrix of integers.
  * @a: input
  * @size: input
  */
