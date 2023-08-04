@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _strpbrk - An Entry point
-* @s: input
-* @accept: input
-* Return: 0 (Success).
+ * _strpbrk - Entry point to searches a string for any of a set of bytes.
+ * @s: input
+ * @accept: input
+ * Return: Always '\0' (Success)
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -15,10 +15,10 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (k = 0; accept[k]; k++)
 		{
-		if (*s == accept[k])
-		return (s);
+			if (*s == accept[k])
+				return (s);
 		}
-	s++;
+		s++;
 	}
 
 	return ('\0');

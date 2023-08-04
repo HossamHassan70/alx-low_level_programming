@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
-* char *_strcpy - A function that copies the string pointed to dest by src.
-* @dest: copy to this var.
-* @src: copy from this var.
-* Return: string (dest).
+ * char *_strcpy - a function that copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int l = 0;
@@ -21,6 +20,5 @@ char *_strcpy(char *dest, char *src)
 		dest[x] = src[x];
 	}
 	dest[l] = '\0';
-
 	return (dest);
 }

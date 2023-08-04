@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
-* _strchr - A funcion prototype to enter
-* @s: input
-* @c: input
-* Return: (0) Success
+ * _strchr - Entry point that locates a character in a string.
+ * @s: input
+ * @c: input
+ * Return: Always = 0 (Success)
  */
 
 char *_strchr(char *s, char c)
