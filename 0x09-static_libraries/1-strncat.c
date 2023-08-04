@@ -2,7 +2,7 @@
 
 /**
 * _strncat - A function that concatenate two strings
-* 	using at most n bytes from src
+* using at most n bytes from src
 * @dest: input value
 * @src: input value
 * @n: input value
