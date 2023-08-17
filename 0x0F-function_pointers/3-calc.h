@@ -2,12 +2,10 @@
 #define CALC_H
 
 #include <stdlib.h>
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
-* Desc: This is the header file for prototypes.
-* struct op - A struct op.
+* struct op- A struct for calc opration.
 * @op: The operator.
 * @f: The associated function.
  */
