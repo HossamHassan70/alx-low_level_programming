@@ -3,11 +3,9 @@
 void first(void) __attribute__ ((constructor));
 
 /**
-* first - A function that prints a sentence before the main.
-* function is executed,
-* Return: No return.
+* first - A function that prints a sentence before the main
+* function is executed
  */
-
 void first(void)
 {
 	printf("You'er beat! and yet, you must allow,\n");
