@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* free_listin_safe - A function to free linked list.
+* free_listint_safe - A function to free linked list.
 * @h: poiner first node.
 * Return: A number of element free kist.
  */
