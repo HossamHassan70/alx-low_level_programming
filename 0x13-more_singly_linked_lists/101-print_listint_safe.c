@@ -7,6 +7,7 @@
 * an array of pointers to the nodes in a linked list.
 * @list: The old list.
 * @size: A size of the new list.
+* @new: A new node of list.
 * Return: To pointer to the new list.
  */
 
@@ -52,7 +53,7 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		nnodes++;
 		list = _r(list, nnodes, head);
-		printf("[%p] %d\n",(void *)head, head->n);
+		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
 	free(list);
