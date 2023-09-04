@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* error_file - This function to check if files can be open.
-* @file_from: Check file from.
-* @file_to: Check file to.
-* @argv: Check values in argumentes.
+* error_file - Function that checks if files can be opened.
+* @file_from: file_from.
+* @file_to: file_to.
+* @argv: arguments vector.
 * Return: Void.
  */
 
@@ -24,12 +24,11 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
-* main - Entry point & check the code for Holberton.
-* @argc: Numbers of arguments.
-* @argv: The content argument vector.
-* Return: Always 0
+* main - Entry point - check the code for Holberton School students.
+* @argc: number of arguments.
+* @argv: arguments vector.
+ * Return: Always 0.
  */
-
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
@@ -38,7 +37,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_to");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 
