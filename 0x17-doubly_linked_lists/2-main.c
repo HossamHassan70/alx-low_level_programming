@@ -1,12 +1,11 @@
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
- * main - check the code
+ * main - Entry point
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: Always EXIT_SUCCESS
  */
 int main(void)
 {
@@ -24,3 +23,4 @@ int main(void)
 	print_dlistint(head);
 	return (EXIT_SUCCESS);
 }
+
