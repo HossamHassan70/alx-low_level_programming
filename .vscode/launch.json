@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "h:/Alx/alx-low_level_programming/0x17-doubly_linked_lists",
-      "program": "h:/Alx/alx-low_level_programming/0x17-doubly_linked_lists/build/Debug/outDebug",
+      "cwd": "h:/Alx/alx-low_level_programming/0x18-dynamic_libraries",
+      "program": "h:/Alx/alx-low_level_programming/0x18-dynamic_libraries/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
