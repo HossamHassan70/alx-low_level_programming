@@ -1,41 +1,35 @@
 #!/usr/bin/python3
-""" This script  compute the param of an island"""
+"""Defines an island perimeter measuring function."""
 
 
 def island_perimeter(grid):
-    """ island_param:
-                    Args: for grid, a list of list of integers
-                    Return: for param of the island in grid
+    """Return the perimiter of an island.
+
+    The grid represents water by 0 and land by 1.
+
+    Args:
+        grid (list): A list of list of integers representing an island.
+    Returns:
+        The perimeter of the island defined in grid.
     """
+    if not grid:
+        return 0
 
+    rows = len(grid)
+    cols = len(grid[0])
     perimeter = 0
-    env_list = []
 
-    for items in range(len(grid)):
-        if items == 0 or items == len(grid):
-            continue
-        for cell in range(len(grid[items])):
-            if cell == 0 or cell == len(grid[items]):
-                continue
-            else:
-                if grid[items][cell] == 1:
-                    env_list = [grid[items - 1][cell], grid[items][cell + 1],
-                                grid[items + 1][cell],  grid[items][cell - 1]]
-                    count = 0
-                    for j in env_list:
-                        if j == 0:
-                            count = count + 1
-                    if (count == 4):
-                        return 4
-                    elif (count == 3):
-                        perimeter = perimeter + 3
-                    elif (count == 2):
-                        perimeter = perimeter + 2
-                    elif (count == 1):
-                        perimeter = perimeter + 1
-                    else:
-                        pass
-                    env_list = []
-                else:
-                    pass
+    for row in range(rows):
+        for col in range(cols):
+            if grid[row][col] == 1:
+
+                if row == 0 or grid[row - 1][col] == 0:
+                    perimeter += 1
+                if row == rows - 1 or grid[row + 1][col] == 0:
+                    perimeter += 1
+                if col == 0 or grid[row][col - 1] == 0:
+                    perimeter += 1
+                if col == cols - 1 or grid[row][col + 1] == 0:
+                    perimeter += 1
+
     return perimeter
