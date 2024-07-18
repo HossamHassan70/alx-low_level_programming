@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * linear_search - This method for search lnear form in array for element
+ * linear_search - this method for search lnear form in array for element
  * @array: for array list
  * @size: for size of the array
  * @value: this value of the array
@@ -20,6 +20,5 @@ int linear_search(int *array, size_t size, int value)
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
-	}
-	return (-1);
+	} return (-1);
 }

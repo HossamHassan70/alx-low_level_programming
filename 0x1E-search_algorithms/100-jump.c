@@ -1,7 +1,8 @@
 #include "search_algos.h"
 
 /**
- * jump_search - This method searche for a value in array of integers.
+ * jump_search - this method searche  for a value in an array of integers
+ *
  * @array: this pointer for to the first element of the array to search in
  * @size: this  number for of elements in array
  * @value: this value for  to search for
@@ -29,7 +30,7 @@ int jump_search(int *array, size_t size, int value)
 
 	end = end >= size ? size - 1 : end;
 
-	while (strt <= end)
+	while  (strt <= end)
 	{
 		printf("Value checked array[%lu] = [%d]\n", strt, array[strt]);
 		if (array[strt] == value)

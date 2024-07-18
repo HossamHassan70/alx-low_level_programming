@@ -3,7 +3,7 @@
 void print_array(int *array, size_t i, size_t size);
 
 /**
- * binary_search - this method binary search for algorithm in a STR
+ * binary_search - this method binary search for algorithm in a str
  * @array: for list of elements
  * @size: for size of the list
  * @value: for Target to search
@@ -52,6 +52,5 @@ void print_array(int *array, size_t i, size_t size)
 		else
 			printf("%d, ", array[i]);
 		i++;
-	}
-	printf("\n");
+	} printf("\n");
 }
