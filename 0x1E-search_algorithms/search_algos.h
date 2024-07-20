@@ -2,7 +2,6 @@
 #define SEARCH_H
 
 #include <stdio.h>
-#include <lists.h>
 
 /* this script for Prototype*/
 int binary_search(int *array, size_t size, int value);
