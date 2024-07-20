@@ -1,41 +1,45 @@
+#include <stdio.h>
 #include "search_algos.h"
 
 /**
- * interpolation_search - this method searches for value in an array of integers
- * @array: this pointer to the first element of the array to search in
- * @size: this num of elements in array
- * @value: this value to search for
+ * interpolation_search - Searches for a value in a sorted array using
+ *                        the Interpolation Search algorithm.
+ * @array: A pointer to the first element of the array to search in.
+ * @size: The number of elements in the array.
+ * @value: The value to search for.
  *
- * Return:  First where value is located or -1 on failure or not found
+ * Return: The first index where the value is located, or -1 if not found.
  */
-
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t i = 0, low = 0, high = size - 1;
+	int low = 0;
+	int high = size - 1;
 
-	if (array)
+	if (array == NULL || size == 0)
 	{
-		while ((value >= array[low]))
-		{
-			i = low + (((double)(high - low) /
-						(array[high] - array[low])) * (value - array[low]));
-
-			if (i > size)
-			{
-				printf("Value checked array[%lu] is out of range\n", i);
-				break;
-			}
-
-			printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-
-			if (array[i] < value)
-				low = i + 1;
-			else if (array[i] > value)
-				high = i - 1;
-			else
-				return (i);
-		}
+		return (-1); /* Array is NULL or empty, return -1 */
 	}
 
-	return (-1);
+	while (low <= high && value >= array[low] && value <= array[high])
+	{
+		/* Calculate the probe position */
+		size_t pos = low + (((double)(high - low) /
+		(array[high] - array[low])) * (value - array[low]));
+
+		printf("Comparing with array[%lu] = %d\n", pos, array[pos]);
+
+		if (array[pos] == value)
+		{
+			return (pos); /* Value found */
+		}
+		else if (array[pos] < value)
+		{
+			low = pos + 1; /* Adjust the search range to the right */
+		}
+		else
+		{
+			high = pos - 1; /* Adjust the search range to the left */
+		}
+	}
+	return (-1); /* Value not found */
 }
